@@ -1,7 +1,7 @@
 /* eslint-disable indent */
-const getName = (object) => {
+const getName = ({ name }) => {
     
-    return object.name;
+    return name;
 
 };
 
