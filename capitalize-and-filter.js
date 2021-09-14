@@ -6,5 +6,3 @@ const capitalizeAndFilter = (arr) => {
     return newArr;
 };
 export default capitalizeAndFilter;
-
-//const newArr = arr.capitalizeAndFilter((string) => !string.startsWith('f'));
