@@ -6,8 +6,8 @@ describe('fetchQuote', () => {
         const actual = await fetchQuote();
 
         expect(actual).toEqual({
-            character: expect.any(String),
-            quote: expect.any(String),
+            name: expect.any(String),
+            text: expect.any(String),
             image: expect.any(String)
         });
     });
