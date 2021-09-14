@@ -1,12 +1,10 @@
 /* eslint-disable indent */
 
 const capitalizeAndFilter = (arr) => {
-    const newArr = [];
-    for (const obj of arr) {
-        if (obj.charAt(0) !== 'f' && obj.charAt(0) !== 'F') {
-            newArr.push(obj.toUpperCase());
-        }
-    }
+    const upArr = arr.map(string => string.toUpperCase());
+    const newArr = upArr.filter(string => string.charAt(0) !== 'F');
     return newArr;
 };
 export default capitalizeAndFilter;
+
+//const newArr = arr.capitalizeAndFilter((string) => !string.startsWith('f'));
