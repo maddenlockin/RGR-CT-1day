@@ -4,8 +4,18 @@ import getName from './get-name';
 describe('getName', () => {
     it('returns only the name from a set of data', () => {
         const spot = { name: 'spot', age: 5, weight: '20 lbs' };
-        const expected = 'spot';
         const actual = getName(spot);
-        expected(actual).toEqual(expected);
+        const expected = 'spot';
+        
+        expect(actual).toEqual(expected);
     });
+    
+    it('returns on the name from the set of data', () => {
+        const character = { _id: '5cf5679a915ecad153ab68c9', name: 'Aang' };
+        const actual = getName(character);
+        const expected = 'Aang';
+
+        expect(actual).toEqual(expected);
+    });
+
 });

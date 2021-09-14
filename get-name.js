@@ -1,4 +1,7 @@
-const getName = () => {
+/* eslint-disable indent */
+const getName = ({ name }) => {
+    
+    return name;
 
 };
 
